@@ -1,0 +1,91 @@
+/* Definição das cores básicas do tema */
+:root {
+    --verde: #4CAF50; /* Verde para destaques */
+    --verde-escuro: #2E7D32; /* Verde mais escuro para o cabeçalho */
+    --marrom: #8B4513; /* Marrom terra para elementos decorativos */
+    --branco: #FFFFFF; /* Branco para fundos e áreas de conteúdo */
+    --preto: #000000; /* Preto para texto */
+    --cinza-escuro: #333333; /* Cinza escuro para texto delicado */
+}
+
+/* Estilo geral do corpo da página */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Lora', serif; /* Fonte delicada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco); /* Cor do texto */
+}
+
+/* Estilo do vídeo de fundo */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+/* Estilo da sobreposição */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparência para melhor leitura do texto */
+    z-index: 1;
+}
+
+/* Estilo do conteúdo principal */
+.content {
+    text-align: center;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 2rem; /* Tamanho do título principal */
+    margin-bottom: 0.5rem;
+}
+
+.content h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+    margin-bottom: 0.5rem;
+}
+
+.content h3 {
+    font-size: 1.2rem; /* Tamanho do subtítulo menor */
+    margin-bottom: 1rem;
+}
+
+/* Estilo para os nomes dos integrantes */
+.integrantes {
+    font-size: 1rem; /* Tamanho do texto dos integrantes */
+    margin-bottom: 2rem;
+}
+/* Estilo dos botões */
+.botao {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem; /* Aumentar tamanho da fonte */
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.botao:hover {
+    background-color: var(--marrom);
+}

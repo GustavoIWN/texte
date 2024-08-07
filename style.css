@@ -1,0 +1,145 @@
+/* Definição das cores básicas do tema */
+:root {
+    --verde: #4CAF50; /* Verde para destaques */
+    --verde-escuro: #2E7D32; /* Verde mais escuro para o cabeçalho */
+    --marrom: #8B4513; /* Marrom terra para elementos decorativos */
+    --branco: #FFFFFF; /* Branco para fundos e áreas de conteúdo */
+    --preto: #000000; /* Preto para texto */
+}
+
+/* Estilo geral do corpo da página */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Verdana Narrow', sans-serif; /* Verdana Narrow */
+    color: var(--cinza-escuro); /* cinza escuro em vez de preto */
+    font-weight: 300;  
+    letter-spacing: 0.5px; /* espaçamento entre letras */
+    line-height: 1.6; /* espaçamento entre linhas */
+
+    font-size: 20px;
+    box-sizing: border-box;
+    background: url('img_colheita.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    scroll-behavior: smooth; /* deslizar suave */
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('sua-imagem-url.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--verde-escuro);
+    color: var(--branco);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem; /* tamanho da fonte */
+    font-family: 'Lora', serif; /* parágrafos */
+}
+
+/* container principal */
+.container {
+    margin-top: 80px; /* altura do cabeçalho */
+    padding: 1rem;
+}
+
+/*  parágrafos */
+p {
+    font-family: 'Lora', serif; 
+    font-weight: 300; /* mais leve */
+    letter-spacing: 0.5px; /* espaçamento entre letras */
+    line-height: 1.6; /* espaçamento entre linhas */
+    text-align: justify; /* Justificar texto */
+    text-indent: 1.5cm; /* Recuo de 1,5 cm na primeira linha */
+
+}
+
+/* Estilo dos botões */
+.botao {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.25rem; /* Aumentar tamanho da fonte */
+    display: block;
+    margin: 10px auto 0 auto; /* Centralizar botão */
+
+}
+
+a{
+    text-decoration: none; /* retirar o sublinhado que aparece no link */
+
+}
+.botao:hover {
+    background-color: var(--marrom); /* muda a cor quando o mouse vai em cima */
+}
+
+/* dives de textos chamadas de cards */
+.card {
+    background: rgba(255, 255, 255, 0.6); /* fundo do card branco com uma certa transparencia */ 
+    border-radius: 5px; /* borda arredondada */ 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombreado do card */ 
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+/* tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: transparent; /* fundo transparente */
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid black; /* bordas pretas */
+    color: black; /* letras pretas */
+}
+
+th {
+    font-size: 1.25rem; /* tamanho da fonte na tabela */
+}
+
+tr {
+    background-color: transparent; /* fundo transparente */
+}
+
+
+
+
+
+
